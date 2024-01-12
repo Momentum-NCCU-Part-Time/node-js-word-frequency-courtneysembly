@@ -44,5 +44,19 @@ function printWordFreq(file, callback) {
 }
 
 printWordFreq(filePath, (wordCount) => {
-  console.log('The results from your word counts:', wordCount)
+  console.log('"a" , "and" , "an" , "are" , "as" , "at", wordCount)
 })
+// add words here.
+function wordFreq(string) {
+    var words = string.replace(/[.]/g, '').split(/\s/);
+    var freqMap = {};
+    words.forEach(function(w) {
+        if (!freqMap[w]) {
+            freqMap[w] = 0;
+        }
+        freqMap[w] += 1;
+  
+
+console.log(wordFreq("I am the big the big bull."));
+Object {}
+// add words here.
